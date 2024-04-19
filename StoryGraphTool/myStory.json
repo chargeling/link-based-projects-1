@@ -1,0 +1,107 @@
+{
+    "Title": "The Explore of My House",
+    "Credits": "Created by Adam Smith (amsmith@ucsc.edu).",
+    "InitialLocation": "DiningRoom",
+    "Locations": {
+        "DiningRoom": {
+            "Body": "Walking in the house, the first here is the dining room with a round table that can hold six people.",
+            "Choices": [
+                {
+                    "Text": "Walking in",
+                    "Target": "Hallway"
+                },
+                {
+                    "Text": "Go thru dining table",
+                    "Target": "Kitchen"
+                }
+            ]
+        },
+        "Hallway": {
+            "Body": "The Hallway is the link to the living room and the front door, and the laundry room is right next to the hallway.",
+            "Choices": [
+                {
+                    "Text": "Keep Walking",
+                    "Target": "LivingRoom"
+                },
+                {
+                    "Text": "Turn",
+                    "Target": "LaundryRoom"
+                }
+            ]
+        },
+        "Kitchen": {
+            "Body": "The kitchen was half open to the living room with a window on top of the sink that you view the back yard.",
+            "Choices": [
+                {
+                    "Text": "Back to Front Door",
+                    "Target": "DiningRoom"
+                },
+                {
+                    "Text": "Walk out of Kitchen",
+                    "Target": "LivingRoom"
+                }
+            ]
+        },
+        "LivingRoom": {
+            "Body": "The living room is a large room with a set of sofa and two tables.",
+            "Choices": [
+                {
+                    "Text": "Upstair",
+                    "Target": "Second"
+                },
+                {
+                    "Text": "Back to Hallway",
+                    "Target": "Hallway"
+                },
+                {
+                    "Text": "Go to Kitchen",
+                    "Target": "Kitchen"
+                }
+            ]
+        },
+        "LaundryRoom": {
+            "Body": "Oakes College, even the buildings have tree bark on them.",
+            "Choices": [
+                {
+                    "Text": "North",
+                    "Target": "Second"
+                },
+                {
+                    "Text": "South",
+                    "Target": "Kitchen"
+                }
+            ]
+        },
+        "BedRoom1": {
+            "Body": "My room.",
+            "Choices": [
+                {
+                    "Text": "Back to the mainroom",
+                    "Target": "Second"
+                }
+            ]
+        },
+        "BedRoom2": {
+            "Body": "This is the room for my parents.",
+            "Choices": [
+                {
+                    "Text": "Back to the mainroom",
+                    "Target": "Second"
+                }
+            ]
+        },
+        "Second": {
+            "Body": "Walkup to the stair, There is an empty room. ",
+            "Choices": [
+                {
+                    "Text": "Go to bedroom right",
+                    "Target": "BedRoom2"
+                },
+                {
+                    "Text": "Go to bedroom left",
+                    "Target": "BedRoom1"
+                }
+            ]
+        }
+    }
+}
